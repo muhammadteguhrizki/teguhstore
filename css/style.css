@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+/* logo */
+.logo-text {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 26px;
+  margin-left: 5px;
+  text-decoration: none;
+}
+/* Menu */
+nav ul li {
+  margin: 0 10px;
+  position: relative;
+}
+nav ul li a {
+  font-size: 18px;
+  font-family: 'Poppins';
+  color: #fff;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #fff;
+}
+@media (min-width: 992px) {
+  nav ul li::after {
+    content: '';
+    height: 4px;
+    width: 0%;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+  }
+  nav ul li:hover::after {
+    width: 100%;
+  }
+  nav .active::after {
+    width: 100%;
+  }
+}
+nav ul li .navbar-brand {
+  margin: 0 10px;
+}
+
+.jumbotron {
+  padding-top: 3rem;
+}
+
+/* Baner corousel */
+.carousel {
+  width: 80%;
+  margin: auto;
+}
+
+.img-promo {
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    width: 100%;
+  }
+}
+
+/* Produk */
+.produk-img:hover {
+  transform: scale(1.1);
+}
+
+.suport {
+  padding: 20px;
+}
+
+footer {
+  background-color: #ffc107;
+  padding-bottom: 10px;
+}
+footer p {
+  text-align: center;
+  padding-top: 30px;
+}
+
+/* Mobile Menu */
+@media (max-width: 992px) {
+  .mobile-menu {
+    margin-top: 1.2rem;
+    text-align: right;
+  }
+  .mobile-menu .nav-item {
+    margin-bottom: 2rem;
+  }
+}
+
+/*bantuan*/
+.line {
+  height: 3px;
+  width: 50%;
+  background: #000;
+  margin: auto;
+}
+.card-help {
+  background: #ffc107;
+  border-radius: 20px;
+}
+/* Scroll Top */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  padding: 20px;
+  font-size: 40px;
+  color: #a8a8a8;
+  opacity: 0.6;
+}
+.back-to-top:hover {
+  color: #a8a8a8;
+  opacity: 1;
+}

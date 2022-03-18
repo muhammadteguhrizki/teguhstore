@@ -1,0 +1,49 @@
+:root {
+  /* Font */
+  --firstFont: 'Roboto', sans-serif;
+
+  /* Color */
+  --firstColor: #ffc107;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  height: 70px;
+  width: 100%;
+  background-color: var(--firstColor);
+}
+nav {
+  position: relative;
+  border: 1px solid transparent;
+}
+.title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.title h2 {
+  font-family: var(--firstFont);
+  font-weight: 500;
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+}
+.menu-toggle-icon {
+  font-size: 30px;
+  color: #000;
+}
+
+@media (max-width: 320px) {
+  .title {
+    text-align: start;
+  }
+  .menu-toggle {
+    padding: 20px 0;
+  }
+}
